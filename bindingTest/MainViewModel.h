@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 
 @interface PHMainViewModel : NSObject
-
+@property (nonatomic) NSNumber *sliderValue;
 - (void)applySliderValue:(NSInteger)valueFrom0to100;
 
 @end

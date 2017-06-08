@@ -10,5 +10,8 @@
 
 CViewModel::CViewModel(IViewModelListener& iObserver) : fListener(iObserver)
 {
-	
+   
+}
+void CViewModel::NotifyChange(const std::string& iPropertyName) {
+    fListener.IViewModelListener_OnChange(iPropertyName);
 }

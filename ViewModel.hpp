@@ -17,7 +17,10 @@ public: virtual void IViewModelListener_OnChange(const std::string& iPropertyNam
 };
 
 class CViewModel /*: public NSBeanCounter::IMOMSubscriber*/ {
+public: int sliderValue;
 public: CViewModel(IViewModelListener& iObserver);
+public: void NotifyChange(const std::string& iPropertyName);
+
 	
 #if DEBUG
 public:  bool CheckInvariant() const;

@@ -59,12 +59,11 @@ PHMainViewModel* GetMainViewModelInstance() {
 	NSCAssert(gInstance != nil, @"" );
 	return gInstance;
 }
-
 @implementation PHMainViewModel {
 	std::unique_ptr<CViewModel> fViewModel;
 	std::unique_ptr<CViewModelListener> fViewModelListener;
 }
-
+@synthesize sliderValue;
 - (instancetype)init {
 	self = [super init];
 	if (self != nil) {
@@ -75,7 +74,10 @@ PHMainViewModel* GetMainViewModelInstance() {
 	}
 	return self;
 }
-
+-(NSNumber *)sliderValue
+{
+    return @(fViewModel->sliderValue);
+}
 - (void)setup
 {
 	
@@ -85,9 +87,14 @@ PHMainViewModel* GetMainViewModelInstance() {
 	[self willChangeValueForKey:keyPath];
 	[self didChangeValueForKey:keyPath];
 }
-
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    
+}
 - (void)applySliderValue:(NSInteger)valueFrom0to100;
 {
+    fViewModel->sliderValue = (int)valueFrom0to100;
+    fViewModel->NotifyChange("sliderValue");
 	NSLog( @"Slider changed to %ld", (long)valueFrom0to100 );
 }
 
