@@ -9,7 +9,6 @@
 #import "MainViewModel.h"
 #import <Foundation/FoundationErrors.h>
 #import "ViewModel.hpp"
-#import <RxCocoa/RxCocoa.h>
 #import <UIKit/UIKit.h>
 
 @interface PHMainViewModel()

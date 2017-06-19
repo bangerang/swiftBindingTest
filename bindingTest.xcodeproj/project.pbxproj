@@ -15,25 +15,7 @@
 		632963C01EDC237A0056F4BF /* bindingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632963BF1EDC237A0056F4BF /* bindingTestTests.swift */; };
 		632963CB1EDC237A0056F4BF /* bindingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632963CA1EDC237A0056F4BF /* bindingTestUITests.swift */; };
 		632963DC1EDC4F0E0056F4BF /* MainViewModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 632963D91EDC23A50056F4BF /* MainViewModel.mm */; };
-		63CB55721EE02E6A0083B57B /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB556E1EE02E6A0083B57B /* RxBlocking.framework */; };
-		63CB55731EE02E6A0083B57B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB556F1EE02E6A0083B57B /* RxCocoa.framework */; };
-		63CB55771EE02F350083B57B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB55701EE02E6A0083B57B /* RxSwift.framework */; };
-		63CB55791EE02F9C0083B57B /* RxBlocking.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 63CB556E1EE02E6A0083B57B /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63CB557A1EE02F9C0083B57B /* RxCocoa.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 63CB556F1EE02E6A0083B57B /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63CB557B1EE02F9C0083B57B /* RxSwift.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 63CB55701EE02E6A0083B57B /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63CB557E1EE030200083B57B /* ViewModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63CB557C1EE030200083B57B /* ViewModel.cpp */; };
-		AB027B7E1EE97FD3005669AE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B7B1EE97FD3005669AE /* ReactiveCocoa.framework */; };
-		AB027B7F1EE97FD3005669AE /* ReactiveCocoa.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B7B1EE97FD3005669AE /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB027B801EE97FD3005669AE /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B7C1EE97FD3005669AE /* ReactiveSwift.framework */; };
-		AB027B811EE97FD3005669AE /* ReactiveSwift.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B7C1EE97FD3005669AE /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB027B821EE97FD3005669AE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B7D1EE97FD3005669AE /* Result.framework */; };
-		AB027B831EE97FD3005669AE /* Result.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B7D1EE97FD3005669AE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB027B8A1EE9A469005669AE /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B871EE9A469005669AE /* Bond.framework */; };
-		AB027B8B1EE9A469005669AE /* Bond.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B871EE9A469005669AE /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB027B8C1EE9A469005669AE /* Diff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B881EE9A469005669AE /* Diff.framework */; };
-		AB027B8D1EE9A469005669AE /* Diff.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B881EE9A469005669AE /* Diff.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB027B8E1EE9A469005669AE /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB027B891EE9A469005669AE /* ReactiveKit.framework */; };
-		AB027B8F1EE9A469005669AE /* ReactiveKit.framework in Carthage */ = {isa = PBXBuildFile; fileRef = AB027B891EE9A469005669AE /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AB027B911EE9A93B005669AE /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB027B901EE9A93B005669AE /* Binder.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,28 +35,6 @@
 			remoteInfo = bindingTest;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		63CB55781EE02F830083B57B /* Carthage */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				63CB55791EE02F9C0083B57B /* RxBlocking.framework in Carthage */,
-				63CB557A1EE02F9C0083B57B /* RxCocoa.framework in Carthage */,
-				AB027B811EE97FD3005669AE /* ReactiveSwift.framework in Carthage */,
-				AB027B8D1EE9A469005669AE /* Diff.framework in Carthage */,
-				AB027B831EE97FD3005669AE /* Result.framework in Carthage */,
-				63CB557B1EE02F9C0083B57B /* RxSwift.framework in Carthage */,
-				AB027B8B1EE9A469005669AE /* Bond.framework in Carthage */,
-				AB027B8F1EE9A469005669AE /* ReactiveKit.framework in Carthage */,
-				AB027B7F1EE97FD3005669AE /* ReactiveCocoa.framework in Carthage */,
-			);
-			name = Carthage;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		632963A71EDC237A0056F4BF /* bindingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bindingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,15 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63CB55731EE02E6A0083B57B /* RxCocoa.framework in Frameworks */,
-				63CB55721EE02E6A0083B57B /* RxBlocking.framework in Frameworks */,
-				AB027B801EE97FD3005669AE /* ReactiveSwift.framework in Frameworks */,
-				AB027B8C1EE9A469005669AE /* Diff.framework in Frameworks */,
-				AB027B821EE97FD3005669AE /* Result.framework in Frameworks */,
-				63CB55771EE02F350083B57B /* RxSwift.framework in Frameworks */,
-				AB027B8A1EE9A469005669AE /* Bond.framework in Frameworks */,
-				AB027B8E1EE9A469005669AE /* ReactiveKit.framework in Frameworks */,
-				AB027B7E1EE97FD3005669AE /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +178,6 @@
 				632963A31EDC237A0056F4BF /* Sources */,
 				632963A41EDC237A0056F4BF /* Frameworks */,
 				632963A51EDC237A0056F4BF /* Resources */,
-				63CB55781EE02F830083B57B /* Carthage */,
 			);
 			buildRules = (
 			);

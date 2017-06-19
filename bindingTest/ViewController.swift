@@ -7,34 +7,27 @@
 //
 
 import UIKit
-import RxSwift
-import ReactiveCocoa
-import ReactiveSwift
-import Bond
-import ReactiveKit
 
 class ViewController: UIViewController {
-
+	
+	var observation: NSKeyValueObservation?
+	
     @IBAction func sliderChanged(_ sender: UISlider) {
-        viewModel?.applySliderValue(Int(sender.value * 100))
+        viewModel.applySliderValue(Int(sender.value * 100))
     }
 	@IBOutlet weak var playButton: UIButton!
 	@IBOutlet weak var macroSlider: UISlider!
     @IBOutlet weak var sliderLabel: UILabel!
-    
-    var binder: Binder!
-    var viewModel = GetMainViewModelInstance()
+	
+	var viewModel: PHMainViewModel = GetMainViewModelInstance()
+	
 	override func viewDidLoad() {
         
 		super.viewDidLoad()
-        
-        self.binder = Binder(object: viewModel!)
-        
-        let keyPath = NSStringFromSelector(#selector(getter: viewModel?.sliderValue))
-        
-        self.sliderLabel.reactive.text <~ binder.mutableIntProperty(keypath: keyPath).map{number in
-            return "\(number)"
-        }
+		
+		observation = viewModel.observe(\.sliderValue) { object, change in
+			self.sliderLabel.text = "\(object.sliderValue!)"
+		}
         
 	}
 }
